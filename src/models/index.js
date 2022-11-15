@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
 
-const sequelize = new Sequelize(
+const db = new Sequelize(
   'realworlddb',
   'realworlduser',
   'realworldkey',
@@ -9,9 +9,6 @@ const sequelize = new Sequelize(
     dialect: 'mysql' 
 }
 )
-
-const db = {}
-db.sequelize = sequelize;
 
 const Users = db.define('user', {
   email: {

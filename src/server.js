@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 // Routes
 app.use('/api', require('./routes/api'))
 
-db.sync({force: true})
+db.sync()
     .then(() => {
         app.listen(2200, () => {
             console.log('Server started on http://localhost:2200/')
