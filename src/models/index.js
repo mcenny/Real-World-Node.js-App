@@ -1,14 +1,15 @@
 const Sequelize = require('sequelize')
 
 const db = new Sequelize(
-  'realworlddb',
-  'realworlduser',
-  'realworldkey',
+  'tutdb',
+  'mcenny',
+  'Ola Dev',
  { 
-    host: 'localhost',
+    // host: 'localhost',
     dialect: 'mysql' 
 }
 )
+
 
 const Users = db.define('user', {
   email: {
